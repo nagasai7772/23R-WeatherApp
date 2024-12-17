@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    overflow: hidden;
+    color: #ffffff;
+    background-image: url(https://wallpapers.com/images/hd/foggy-weather-and-gloomy-sky-8q0j6jsztd67czmb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Search Section */
+  div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input#search {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input#search::placeholder {
+    color: #dfe4ea;
+  }
+  
+  input#search:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Weather Info Container */
+  .container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+  }
+  
+  #City_block {
+    margin-bottom: 20px;
+  }
+  
+  #city {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  #icon {
+    font-size: 40px;
+  }
+  
+  #temp_style {
+    font-size: 18px;
+  }
+  
+  #temp {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:yellow;
+  }
+  
+  #desc {
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  #wind,
+  #humidity,
+  #pressure {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  #wind
+  {
+    color:navy;
+  }
+  #humidity
+  {
+    color: chocolate;
+  }
+  #pressure
+  {
+    color:darkgoldenrod;
+  }
+  
+  /* Glassmorphism Effects */
+  #City_block h2,
+  #temp_style span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+  }
+  #Error_msg
+  {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: gold;
+
+  }
